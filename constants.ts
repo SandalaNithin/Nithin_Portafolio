@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   location: "Hyderabad",
   email: "sandalanithinkumar123@gmail.com",
   phone: "+91-9347314512",
-  linkedin: "https://linkedin.com/in/sandalanithin",
+  linkedin: "https://www.linkedin.com/in/nithin-kumar-sandala-399aa2279/",
   github: "https://github.com/SandalaNithin",
 };
 
@@ -51,7 +51,7 @@ export const EXPERIENCE: Experience = {
 export const SKILLS: SkillCategory[] = [
   {
     title: "Programming",
-    skills: ["C", "Python", "SQL", "DSA"]
+    skills: ["C", "Python", "SQL", "DSA" ,"Java"]
   },
   {
     title: "Frontend",
@@ -59,7 +59,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     title: "Tools",
-    skills: ["VS Code", "IntelliJ", "Canva", "Git/GitHub", "GDB"]
+    skills: ["VS Code", "IntelliJ", "Canva", "Git/GitHub"]
   }
 ];
 
@@ -67,13 +67,25 @@ export const PROJECTS: Project[] = [
   {
     title: "Lakshmi Function Hall Website",
     githubUrl: "https://github.com/SandalaNithin/lakshmi_FH",
-    tech: ["React", "Tailwind"],
+    tech: ["React", "Tailwind" , "JavaScript", "Node.js", "Express.js"],
     features: [
       "Hero slider animations",
-      "OTP login screen",
+      "Booking forms",
       "Image galleries",
       "Smooth UI animations",
-      "Real-time project simulation"
+      "Real-time project simulation",
+      "Interactive navigation menus",
+
+"Responsive layout design",
+"High-quality background visuals",
+"Dynamic content sections",
+"Client-friendly dashboard screens",,
+"Optimized loading speed",
+"Modern typography styling",
+"Mobile-first interface",
+"User-engaging transitions",
+"Multi-page component structure"
+
     ]
   },
   {
@@ -97,7 +109,17 @@ export const PROJECTS: Project[] = [
       "Product grid",
       "Add-to-cart simulation",
       "Smooth navigation",
-      "Responsive layout"
+      "Responsive layout",
+      "Category filters",
+"Wishlist simulation",
+"Search bar functionality",
+"Product detail preview",
+"Cart quantity update",
+"Checkout flow mockup",
+"Clean typography",
+"Fast-loading images",
+"User-friendly buttons",
+"Interactive hover effects"
     ]
   },
   {
@@ -107,26 +129,39 @@ export const PROJECTS: Project[] = [
     features: [
       "Loan EMI calculation",
       "Minimal clean UI",
-      "Mobile responsive design"
+      "Mobile responsive design",
+      "Fast and accurate results",
+
+"User-friendly input fields",
+
+"Clear breakdown of principal and interest",
+
+"Instant calculation without page reload",
+
+"Lightweight and performance-optimized UI",
+
+"Supports multiple loan types",
     ]
   }
 ];
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    title: "Java Full Stack Developer",
-    link: "https://drive.google.com/file/d/1449Lc2b1JfpzCYlxuAVlxRhbtO2BMkW7/view?usp=drive_link"
-  },
-  {
-    title: "C and Data Structure",
-    link: "https://drive.google.com/file/d/1gn15ahPPRcRJYZI3oBmw_nFQZ-W9ZQKU/view?usp=sharing"
+    title: "Web Development",
+    link: "https://drive.google.com/file/d/1ppp5hjPRbomp5AXGWe_4U3LRc-M1UxeK/view?usp=sharing"
   },
   {
     title: "Backend Development",
     link: "https://drive.google.com/file/d/1GzG4aLxQJhQLDm0AOP9kToebvaMeFxzm/view?usp=sharing"
   },
   {
-    title: "Web Development",
-    link: "https://drive.google.com/file/d/1ppp5hjPRbomp5AXGWe_4U3LRc-M1UxeK/view?usp=sharing"
+    title: "C and Data Structure",
+    link: "https://drive.google.com/file/d/1gn15ahPPRcRJYZI3oBmw_nFQZ-W9ZQKU/view?usp=sharing"
+  },
+  
+  {
+    
+    title: "Java Full Stack Developer",
+    link: "https://drive.google.com/file/d/1449Lc2b1JfpzCYlxuAVlxRhbtO2BMkW7/view?usp=drive_link"
   }
 ];

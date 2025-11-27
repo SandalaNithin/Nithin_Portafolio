@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-xl md:text-2xl text-neon-400 font-medium mb-4">Hello World, I'm</h2>
+          <h2 className="text-xl md:text-2xl text-neon-400 font-medium mb-4">I'm</h2>
           <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-6 tracking-tight">
             {PERSONAL_INFO.name}
           </h1>
@@ -60,8 +60,26 @@ const Hero: React.FC = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/Sandala_Nithin_Kumar_Resume.pdf" 
-              download="Sandala_Nithin_Kumar_Resume.pdf"
+              href="/assets/SANDALA_NITHIN.pdf"
+              onClick={async (e) => {
+                e.preventDefault();
+                try {
+                  const res = await fetch('/assets/SANDALA_NITHIN.pdf');
+                  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                  const blob = await res.blob();
+                  const url = window.URL.createObjectURL(blob);
+                  const a = document.createElement('a');
+                  a.href = url;
+                  a.download = 'SANDALA_NITHIN.pdf';
+                  document.body.appendChild(a);
+                  a.click();
+                  a.remove();
+                  window.URL.revokeObjectURL(url);
+                } catch (err) {
+      
+                  window.location.href = '/assets/SANDALA_NITHIN.pdf';
+                }
+              }}
               className="px-8 py-3 rounded-full border border-neon-400 text-neon-400 font-bold hover:bg-neon-400/10 transition-colors flex items-center gap-2"
             >
               Download Resume <Download size={20} />
