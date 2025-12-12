@@ -1,6 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SKILLS } from '../constants';
+import { Code, Palette, Wrench } from 'lucide-react';
+
+const categoryIcons: { [key: string]: React.ReactNode } = {
+  'Programming': <Code className="w-6 h-6" />,
+  'Frontend': <Palette className="w-6 h-6" />,
+  'Tools': <Wrench className="w-6 h-6" />
+};
 
 const Skills: React.FC = () => {
   return (
@@ -24,11 +31,16 @@ const Skills: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-slate-800/40 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-neon-400/50 transition-colors group"
+              className="bg-slate-800/40 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-neon-400/50 transition-all shadow-xl hover:shadow-2xl hover:shadow-neon-400/10 group"
             >
-              <h3 className="text-2xl font-bold text-slate-100 mb-6 text-center group-hover:text-neon-400 transition-colors">
-                {category.title}
-              </h3>
+              <div className="flex items-center justify-center gap-2 mb-6">
+                <span className="text-neon-400 group-hover:scale-110 transition-transform">
+                  {categoryIcons[category.title]}
+                </span>
+                <h3 className="text-2xl font-bold text-slate-100 group-hover:text-neon-400 transition-colors">
+                  {category.title}
+                </h3>
+              </div>
               <div className="flex flex-wrap justify-center gap-3">
                 {category.skills.map((skill) => (
                   <span

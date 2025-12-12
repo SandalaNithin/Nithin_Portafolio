@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-4">Get In Touch</h2>
           <div className="w-20 h-1 bg-neon-400 mx-auto rounded-full" />
         </motion.div>
 
@@ -34,21 +34,21 @@ const Contact: React.FC = () => {
             <p className="text-slate-400">
               I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
-            
+
             <div className="space-y-6">
-              <a href={`mailto:${PERSONAL_INFO.email}`} className="flex items-center space-x-4 text-slate-300 hover:text-neon-400 transition-colors">
+              <a href={`mailto:${PERSONAL_INFO.email}`} className="flex items-center space-x-4 text-slate-300 hover:text-cyan-400 transition-colors">
                 <div className="p-3 bg-slate-800 rounded-lg">
                   <Mail size={24} />
                 </div>
                 <span>{PERSONAL_INFO.email}</span>
               </a>
-              
-              <div className="flex items-center space-x-4 text-slate-300">
+
+              <a href={`tel:${PERSONAL_INFO.phone}`} className="flex items-center space-x-4 text-slate-300 hover:text-cyan-400 transition-colors">
                 <div className="p-3 bg-slate-800 rounded-lg">
                   <Phone size={24} />
                 </div>
                 <span>{PERSONAL_INFO.phone}</span>
-              </div>
+              </a>
 
               <div className="flex space-x-4 pt-4">
                 <a
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                 <input
                   type="text"
                   required
-                  className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg focus:outline-none focus:border-neon-400 text-slate-100 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-900/50 border-2 border-slate-600 rounded-lg focus:outline-none focus:border-neon-400 text-slate-100 transition-colors"
                   placeholder="Your Name"
                 />
               </div>
@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
                 <input
                   type="email"
                   required
-                  className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg focus:outline-none focus:border-neon-400 text-slate-100 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-900/50 border-2 border-slate-600 rounded-lg focus:outline-none focus:border-neon-400 text-slate-100 transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
                 <input
                   type="text"
                   required
-                  className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg focus:outline-none focus:border-neon-400 text-slate-100 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-900/50 border-2 border-slate-600 rounded-lg focus:outline-none focus:border-neon-400 text-slate-100 transition-colors"
                   placeholder="Project Inquiry"
                 />
               </div>
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
                 <textarea
                   required
                   rows={4}
-                  className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg focus:outline-none focus:border-neon-400 text-slate-100 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-900/50 border-2 border-slate-600 rounded-lg focus:outline-none focus:border-neon-400 text-slate-100 transition-colors"
                   placeholder="Your message here..."
                 ></textarea>
               </div>

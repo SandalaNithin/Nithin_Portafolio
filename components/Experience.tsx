@@ -21,7 +21,7 @@ const Experience: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative pl-8 border-l-2 border-slate-700 space-y-8"
+          className="relative pl-12 border-l-2 border-slate-700 space-y-8"
         >
           <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-neon-400 shadow-[0_0_10px_#22d3ee]" />
 

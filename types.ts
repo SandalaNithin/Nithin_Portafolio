@@ -1,12 +1,14 @@
 export interface Project {
   title: string;
   githubUrl: string;
+  liveUrl?: string;
   tech: string[];
   features: string[];
 }
 
 export interface Certification {
   title: string;
+  issuer: string;
   link: string;
 }
 

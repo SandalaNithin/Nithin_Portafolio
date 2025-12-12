@@ -8,10 +8,12 @@ import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import AnimatedBackground from './components/AnimatedBackground';
 
 function App() {
   return (
-    <div className="bg-slate-900 text-slate-100 min-h-screen selection:bg-neon-400 selection:text-slate-900">
+    <div className="relative text-slate-100 min-h-screen selection:bg-neon-400 selection:text-slate-900">
+      <AnimatedBackground />
       <Navbar />
       <main>
         <Hero />
