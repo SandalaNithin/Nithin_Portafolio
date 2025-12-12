@@ -13,7 +13,7 @@ const Certifications: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">Certifications</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-4">Certifications</h2>
           <div className="w-20 h-1 bg-neon-400 mx-auto rounded-full" />
         </motion.div>
 
@@ -34,8 +34,8 @@ const Certifications: React.FC = () => {
               <div className="w-12 h-12 bg-slate-700/50 rounded-full flex items-center justify-center mb-4 group-hover:bg-neon-400/20 transition-colors">
                 <Award className="text-slate-300 group-hover:text-neon-400 transition-colors" size={24} />
               </div>
-              <h3 className="text-lg font-semibold text-slate-100 mb-2">{cert.title}</h3>
-              <span className="text-sm text-neon-400 flex items-center gap-1 mt-auto">
+              <h3 className="text-xl font-semibold text-slate-100 mb-2">{cert.title}</h3>
+              <span className="text-base text-neon-400 flex items-center gap-1 mt-auto">
                 View Certificate <ExternalLink size={12} />
               </span>
             </motion.a>

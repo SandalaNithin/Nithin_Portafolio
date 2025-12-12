@@ -12,7 +12,7 @@ const Skills: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">Technical Skills</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-4">Technical Skills</h2>
           <div className="w-20 h-1 bg-neon-400 mx-auto rounded-full" />
         </motion.div>
 
@@ -26,14 +26,14 @@ const Skills: React.FC = () => {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="bg-slate-800/40 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-neon-400/50 transition-colors group"
             >
-              <h3 className="text-xl font-bold text-slate-100 mb-6 text-center group-hover:text-neon-400 transition-colors">
+              <h3 className="text-2xl font-bold text-slate-100 mb-6 text-center group-hover:text-neon-400 transition-colors">
                 {category.title}
               </h3>
               <div className="flex flex-wrap justify-center gap-3">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 bg-slate-900/50 rounded-lg text-slate-300 text-sm font-medium border border-slate-700 hover:border-neon-400 hover:text-neon-400 transition-all hover:scale-105 cursor-default"
+                    className="px-4 py-2 bg-slate-900/50 rounded-lg text-slate-300 text-lg font-medium border border-slate-700 hover:border-neon-400 hover:text-neon-400 transition-all hover:scale-105 cursor-default"
                   >
                     {skill}
                   </span>

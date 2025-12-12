@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-4">Featured Projects</h2>
           <div className="w-20 h-1 bg-neon-400 mx-auto rounded-full" />
         </motion.div>
 
@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
               className="bg-slate-800/30 backdrop-blur-md rounded-2xl p-6 border border-slate-700 hover:border-neon-400 transition-all hover:shadow-lg hover:shadow-neon-500/10 flex flex-col h-full"
             >
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold text-slate-100">{project.title}</h3>
+                <h3 className="text-2xl font-bold text-slate-100">{project.title}</h3>
                 <a
                   href={project.githubUrl}
                   target="_blank"
@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
                   <Github size={20} />
                 </a>
               </div>
-              
+
               <div className="mb-6 flex flex-wrap gap-2">
                 {project.tech.map((t) => (
                   <span key={t} className="text-xs font-mono text-neon-400 bg-neon-400/10 px-2 py-1 rounded">
@@ -49,13 +49,13 @@ const Projects: React.FC = () => {
 
               <ul className="space-y-2 mb-6 flex-grow">
                 {project.features.map((feature, i) => (
-                  <li key={i} className="flex items-start text-sm text-slate-300">
+                  <li key={i} className="flex items-start text-lg text-slate-300">
                     <span className="mr-2 mt-1 w-1 h-1 bg-slate-500 rounded-full flex-shrink-0" />
                     {feature}
                   </li>
                 ))}
               </ul>
-              
+
               <a
                 href={project.githubUrl}
                 target="_blank"

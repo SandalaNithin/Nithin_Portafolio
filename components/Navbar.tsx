@@ -46,29 +46,27 @@ const Navbar: React.FC = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-slate-900/80 backdrop-blur-md shadow-lg shadow-neon-500/10' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/80 backdrop-blur-md shadow-lg shadow-neon-500/10' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-neon-400 to-blue-500">
-              SNK
+            <a href="#home" className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-neon-400 to-blue-500">
+              NK.S
             </a>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className={`transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium ${
-                    activeSection === link.href.substring(1) 
-                      ? 'text-neon-400' 
-                      : 'text-slate-300 hover:text-neon-400'
-                  }`}
+                  className={`transition-colors duration-300 px-3 py-2 rounded-md text-xl font-medium ${activeSection === link.href.substring(1)
+                    ? 'text-neon-400'
+                    : 'text-slate-300 hover:text-neon-400'
+                    }`}
                 >
                   {link.name}
                 </a>
@@ -81,7 +79,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-slate-300 hover:text-white p-2"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={44} /> : <Menu size={44} />}
             </button>
           </div>
         </div>
@@ -100,11 +98,10 @@ const Navbar: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  activeSection === link.href.substring(1) 
-                    ? 'text-neon-400 bg-slate-800/50' 
-                    : 'text-slate-300 hover:text-neon-400'
-                }`}
+                className={`block px-3 py-2 rounded-md text-lg font-medium ${activeSection === link.href.substring(1)
+                  ? 'text-neon-400 bg-slate-800/50'
+                  : 'text-slate-300 hover:text-neon-400'
+                  }`}
               >
                 {link.name}
               </a>
