@@ -76,18 +76,18 @@ export const PROJECTS: Project[] = [
       "Mobile-first responsive design"
     ]
   },
-  {
-    title: "Comparative Study of Supervised ML Algorithms for Heart Attack Prediction",
-    githubUrl: "https://github.com/SandalaNithin",
-    tech: ["Python", "PyCaret", "Machine Learning"],
-    features: [
-      "Comparative analysis of ML algorithms (Naïve Bayes, Random Forest, LDA)",
-      "Achieved 82.01% accuracy in heart attack prediction",
-      "Comprehensive data preprocessing and feature engineering",
-      "Multiple evaluation metrics (AUC, F1, Precision, Recall)",
-      "Validated for healthcare decision support systems"
-    ]
-  },
+  // {
+  //   title: "Comparative Study of Supervised ML Algorithms for Heart Attack Prediction",
+  //   githubUrl: "https://github.com/SandalaNithin",
+  //   tech: ["Python", "PyCaret", "Machine Learning"],
+  //   features: [
+  //     "Comparative analysis of ML algorithms (Naïve Bayes, Random Forest, LDA)",
+  //     "Achieved 82.01% accuracy in heart attack prediction",
+  //     "Comprehensive data preprocessing and feature engineering",
+  //     "Multiple evaluation metrics (AUC, F1, Precision, Recall)",
+  //     "Validated for healthcare decision support systems"
+  //   ]
+  // },
   {
     title: "E-Commerce Website",
     githubUrl: "https://github.com/SandalaNithin/E-Commerce",

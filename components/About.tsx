@@ -37,8 +37,8 @@ const About: React.FC = () => {
                 <div className="relative bg-slate-800/90 backdrop-blur-sm p-2 rounded-2xl border border-slate-700">
                   <div className="relative overflow-hidden rounded-xl">
                     <img
-                      src="/assets/Photo.jpg"
-                      alt="Photo"
+                      src="/assets/photo.png"
+                      alt="photo"
                       className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     {/* Overlay Effect */}

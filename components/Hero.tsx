@@ -57,23 +57,23 @@ const Hero: React.FC = () => {
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.95 }}
-              href="/assets/SANDALA_NITHIN.pdf"
+              href="/assets/NITHIN_SANDALA.pdf"
               onClick={async (e) => {
                 e.preventDefault();
                 try {
-                  const res = await fetch('/assets/SANDALA_NITHIN.pdf');
+                  const res = await fetch('/assets/NITHIN_SANDALA.pdf');
                   if (!res.ok) throw new Error(`HTTP ${res.status}`);
                   const blob = await res.blob();
                   const url = window.URL.createObjectURL(blob);
                   const a = document.createElement('a');
                   a.href = url;
-                  a.download = 'SANDALA_NITHIN.pdf';
+                  a.download = 'NITHIN_SANDALA.pdf';
                   document.body.appendChild(a);
                   a.click();
                   a.remove();
                   window.URL.revokeObjectURL(url);
                 } catch (err) {
-                  window.location.href = '/assets/SANDALA_NITHIN.pdf';
+                  window.location.href = '/assets/NITHIN_SANDALA.pdf';
                 }
               }}
               className="px-8 py-3 rounded-full border border-neon-400 text-neon-400 font-bold hover:bg-neon-400/10 transition-all duration-200 flex items-center gap-2"
