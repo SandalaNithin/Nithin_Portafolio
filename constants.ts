@@ -34,19 +34,31 @@ export const EDUCATION: Education[] = [
   }
 ];
 
-export const EXPERIENCE: Experience = {
-  role: "Web Development Intern",
-  company: "Sria Infotech Pvt. Ltd",
-  period: "April 2025 – Present",
-  location: "Hyderabad",
-  description: [
-    "Improved UI responsiveness by 40% through component optimization and code refactoring",
-    "Reduced page load time by 30% by implementing lazy loading and image optimization techniques",
-    "Collaborated with UI/UX and backend teams to deliver 5+ production-ready features",
-    "Debugged and resolved 50+ critical bugs, improving overall application stability",
-    "Implemented Git-based version control workflows, reducing merge conflicts by 60%"
-  ]
-};
+export const EXPERIENCE: Experience[] = [
+  {
+    role: "Developer Trainee",
+    company: "Sria Infotech Pvt. Ltd.",
+    period: "December 2025 – Present",
+    location: "Hyderabad, Telangana, India",
+    description: [
+      "Designing and developing scalable web applications using Node.js and MySQL with React and Tailwind CSS.",
+      "Developing a Project Tracking system including employee task assignment, progress tracking, and project budget calculation.",
+      "Implementing and managing Git/GitHub workflows for version control, code reviews, and effective team collaboration."
+    ]
+  },
+  {
+    role: "Web & Odoo Development Intern",
+    company: "Sria Infotech Pvt. Ltd.",
+    period: "May 2025 – November 2025",
+    location: "Hyderabad, Telangana, India",
+    description: [
+      "Developed a fully responsive Function Hall booking website using React, Node.js, Express, MySQL, and Redux.",
+      "Integrated RESTful APIs for efficient data fetching, state management, and dynamic UI updates.",
+      "Implemented a complete Odoo solution for LVK Pharma by analyzing client requirements and participating in weekly meetings; the system is now live."
+    ]
+  }
+];
+
 
 export const SKILLS: SkillCategory[] = [
   {
@@ -121,18 +133,16 @@ export const CERTIFICATIONS: Certification[] = [
     link: "https://drive.google.com/file/d/1ppp5hjPRbomp5AXGWe_4U3LRc-M1UxeK/view?usp=sharing"
   },
   {
-    title: "Backend Development",
-    issuer: "Internshala",
-    link: "https://drive.google.com/file/d/1GzG4aLxQJhQLDm0AOP9kToebvaMeFxzm/view?usp=sharing"
+    title: "Quantum Fundamentals",
+    issuer: "WISER",
+    link: "/assets/quantum_fundamentals_cert.jpg"
   },
   {
     title: "C and Data Structure",
     issuer: "Great Learning",
     link: "https://drive.google.com/file/d/1gn15ahPPRcRJYZI3oBmw_nFQZ-W9ZQKU/view?usp=sharing"
   },
-
   {
-
     title: "Java Full Stack Developer",
     issuer: "Naresh IT",
     link: "https://drive.google.com/file/d/1449Lc2b1JfpzCYlxuAVlxRhbtO2BMkW7/view?usp=drive_link"
