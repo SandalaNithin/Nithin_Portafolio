@@ -12,7 +12,7 @@ import AnimatedBackground from './components/AnimatedBackground';
 
 function App() {
   return (
-    <div className="relative text-slate-100 min-h-screen selection:bg-neon-400 selection:text-slate-900">
+    <div className="relative text-blue-900 min-h-screen selection:bg-blue-300 selection:text-black bg-white">
       <AnimatedBackground />
       <Navbar />
       <main>

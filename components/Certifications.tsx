@@ -13,8 +13,8 @@ const Certifications: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-4">Certifications</h2>
-          <div className="w-20 h-1 bg-neon-400 mx-auto rounded-full" />
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">Certifications</h2>
+          <div className="w-20 h-1 bg-blue-900 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -29,13 +29,13 @@ const Certifications: React.FC = () => {
               whileHover={{ y: -5 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-slate-800/40 backdrop-blur-sm p-6 rounded-xl border border-slate-700 hover:border-neon-400 group cursor-pointer flex flex-col items-center text-center transition-colors"
+              className="bg-white backdrop-blur-sm p-6 rounded-xl border border-blue-200 hover:border-blue-600 group cursor-pointer flex flex-col items-center text-center transition-colors"
             >
-              <div className="w-12 h-12 bg-slate-700/50 rounded-full flex items-center justify-center mb-4 group-hover:bg-neon-400/20 transition-colors">
-                <Award className="text-slate-300 group-hover:text-neon-400 transition-colors" size={24} />
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
+                <Award className="text-blue-900 group-hover:text-blue-700 transition-colors" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-slate-100 mb-2">{cert.title}</h3>
-              <span className="text-base text-neon-400 flex items-center gap-1 mt-auto">
+              <h3 className="text-xl font-semibold text-black mb-2">{cert.title}</h3>
+              <span className="text-base text-blue-900 flex items-center gap-1 mt-auto">
                 View Certificate <ExternalLink size={12} />
               </span>
             </motion.a>

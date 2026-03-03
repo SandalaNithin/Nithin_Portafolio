@@ -19,8 +19,8 @@ const Skills: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-4">Technical Skills</h2>
-          <div className="w-20 h-1 bg-neon-400 mx-auto rounded-full" />
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">Technical Skills</h2>
+          <div className="w-20 h-1 bg-blue-900 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -31,13 +31,13 @@ const Skills: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-slate-800/40 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-neon-400/50 transition-all shadow-xl hover:shadow-2xl hover:shadow-neon-400/10 group"
+              className="bg-white backdrop-blur-sm rounded-xl p-6 border border-blue-200 hover:border-blue-600/50 transition-all shadow-xl hover:shadow-2xl hover:shadow-blue-400/10 group"
             >
               <div className="flex items-center justify-center gap-2 mb-6">
-                <span className="text-neon-400 group-hover:scale-110 transition-transform">
+                <span className="text-blue-900 group-hover:scale-110 transition-transform">
                   {categoryIcons[category.title]}
                 </span>
-                <h3 className="text-2xl font-bold text-slate-100 group-hover:text-neon-400 transition-colors">
+                <h3 className="text-2xl font-bold text-black group-hover:text-blue-900 transition-colors">
                   {category.title}
                 </h3>
               </div>
@@ -45,7 +45,7 @@ const Skills: React.FC = () => {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 bg-slate-900/50 rounded-lg text-slate-300 text-lg font-medium border border-slate-700 hover:border-neon-400 hover:text-neon-400 transition-all hover:scale-105 cursor-default"
+                    className="px-4 py-2 bg-blue-100 rounded-lg text-blue-900 text-lg font-medium border border-blue-300 hover:border-blue-600 hover:text-blue-600 transition-all hover:scale-105 cursor-default"
                   >
                     {skill}
                   </span>

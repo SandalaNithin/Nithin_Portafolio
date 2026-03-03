@@ -46,13 +46,13 @@ const Navbar: React.FC = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/80 backdrop-blur-md shadow-lg shadow-neon-500/10' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-lg shadow-blue-900/10' : 'bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#home" className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-neon-400 to-blue-500">
+            <a href="#home" className="text-4xl font-bold text-blue-900">
               NK.S
             </a>
           </div>
@@ -64,13 +64,13 @@ const Navbar: React.FC = () => {
                   key={link.name}
                   href={link.href}
                   className={`transition-all duration-300 px-3 py-2 rounded-md text-xl font-medium relative ${activeSection === link.href.substring(1)
-                      ? 'text-neon-400'
-                      : 'text-slate-300 hover:text-neon-400'
+                      ? 'text-blue-600'
+                      : 'text-blue-800 hover:text-blue-600'
                     }`}
                 >
                   {link.name}
                   {activeSection === link.href.substring(1) && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-neon-400 rounded-full"></span>
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 rounded-full"></span>
                   )}
                 </a>
               ))}
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-300 hover:text-white p-2"
+              className="text-blue-900 hover:text-blue-600 p-2"
             >
               {isOpen ? <X size={44} /> : <Menu size={44} />}
             </button>
@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
-          className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800"
+          className="md:hidden bg-white/95 backdrop-blur-lg border-t border-blue-100"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
@@ -102,8 +102,8 @@ const Navbar: React.FC = () => {
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 rounded-md text-lg font-medium ${activeSection === link.href.substring(1)
-                  ? 'text-neon-400 bg-slate-800/50'
-                  : 'text-slate-300 hover:text-neon-400'
+                  ? 'text-blue-600 bg-blue-50'
+                  : 'text-blue-800 hover:text-blue-600'
                   }`}
               >
                 {link.name}

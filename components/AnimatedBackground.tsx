@@ -3,10 +3,12 @@ import { motion } from 'framer-motion';
 
 const AnimatedBackground: React.FC = () => {
     return (
-        <div className="fixed inset-0 -z-10 overflow-hidden bg-slate-900">
-            {/* Animated Gradient Orbs */}
+        <div className="fixed inset-0 -z-10 overflow-hidden bg-white">
+            {/* static level design background placeholder */}
+            <div className="absolute inset-0 bg-[url('https://via.placeholder.com/1920x1080?text=Level+Design')] bg-cover bg-center opacity-30" />
+            {/* Animated Gradient Orbs - Light Version */}
             <motion.div
-                className="absolute top-0 -left-20 w-96 h-96 bg-gradient-to-r from-slate-800/40 to-slate-700/30 rounded-full filter blur-3xl"
+                className="absolute top-0 -left-20 w-96 h-96 bg-gradient-to-r from-blue-100/30 to-blue-50/20 rounded-full filter blur-3xl"
                 animate={{
                     x: [0, 100, 0],
                     y: [0, 50, 0],
@@ -20,7 +22,7 @@ const AnimatedBackground: React.FC = () => {
             />
 
             <motion.div
-                className="absolute top-1/4 right-0 w-96 h-96 bg-gradient-to-l from-cyan-900/20 to-slate-800/25 rounded-full filter blur-3xl"
+                className="absolute top-1/4 right-0 w-96 h-96 bg-gradient-to-l from-blue-100/25 to-blue-50/15 rounded-full filter blur-3xl"
                 animate={{
                     x: [0, -80, 0],
                     y: [0, 100, 0],
@@ -35,7 +37,7 @@ const AnimatedBackground: React.FC = () => {
             />
 
             <motion.div
-                className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-tr from-slate-700/25 to-slate-800/30 rounded-full filter blur-3xl"
+                className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-tr from-blue-50/20 to-blue-100/25 rounded-full filter blur-3xl"
                 animate={{
                     x: [0, -50, 0],
                     y: [0, -80, 0],
@@ -50,7 +52,7 @@ const AnimatedBackground: React.FC = () => {
             />
 
             <motion.div
-                className="absolute bottom-0 right-1/3 w-80 h-80 bg-gradient-to-tl from-neon-900/15 to-cyan-900/15 rounded-full filter blur-3xl"
+                className="absolute bottom-0 right-1/3 w-80 h-80 bg-gradient-to-tl from-blue-100/15 to-blue-50/15 rounded-full filter blur-3xl"
                 animate={{
                     x: [0, 60, 0],
                     y: [0, -60, 0],
@@ -65,7 +67,7 @@ const AnimatedBackground: React.FC = () => {
             />
 
             {/* Grid Pattern Overlay */}
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.02)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(30,58,138,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(30,58,138,0.02)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
 
             {/* Noise Texture for depth */}
             <div className="absolute inset-0 opacity-[0.015] mix-blend-overlay">

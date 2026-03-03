@@ -4,11 +4,11 @@ import { Github, Linkedin, Heart } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-950 py-6 border-t border-slate-800">
+    <footer className="bg-white py-6 border-t border-blue-200">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Copyright */}
-          <p className="text-slate-500 text-sm">
+          <p className="text-blue-800 text-sm">
             © {new Date().getFullYear()} Sandala Nithin Kumar. All rights reserved.
           </p>
 
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               href={PERSONAL_INFO.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-500 hover:text-neon-400 transition-colors"
+              className="text-blue-800 hover:text-blue-600 transition-colors"
               aria-label="GitHub"
             >
               <Github size={20} />
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               href={PERSONAL_INFO.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-500 hover:text-neon-400 transition-colors"
+              className="text-blue-800 hover:text-blue-600 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Built With */}
-          <p className="text-slate-500 text-sm flex items-center gap-1">
+          <p className="text-blue-800 text-sm flex items-center gap-1">
             Built with <Heart size={14} className="text-red-500" /> using React, Tailwind & Framer Motion
           </p>
         </div>
