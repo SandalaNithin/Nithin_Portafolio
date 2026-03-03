@@ -78,7 +78,7 @@ export const SKILLS: SkillCategory[] = [
 export const PROJECTS: Project[] = [
   {
     title: "Lakshmi Function Hall Website",
-    githubUrl: "https://github.com/SandalaNithin/lakshmi_FH",
+    githubUrl: "https://github.com/SandalaNithin/Hall",
     tech: ["React", "Tailwind", "JavaScript", "Node.js", "Express.js"],
     features: [
       "Hero slider with smooth animations and transitions",

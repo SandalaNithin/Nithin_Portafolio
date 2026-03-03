@@ -58,7 +58,7 @@ const About: React.FC = () => {
                 className="space-y-6 text-blue-800 leading-relaxed text-xl"
               >
                 <p>
-                  I'm passionate about <strong className="text-blue-900">Web Development</strong> with 6+ months of hands-on experience building responsive, user-friendly web applications. Currently working as a Web Development Intern at <strong className="text-black">Sria Infotech Pvt. Ltd</strong>, where I collaborate with cross-functional teams to deliver production-ready solutions.
+                  I'm passionate about <strong className="text-blue-900">Web Development</strong> with <strong className="text-blue-900">1+ years</strong> of hands-on experience building responsive, user-friendly web applications. Currently working as a Web Development Intern at <strong className="text-black"> Shia Infotech Pvt. Ltd</strong>, where I collaborate with cross-functional teams to deliver production-ready solutions.
                 </p>
 
                 <p>
